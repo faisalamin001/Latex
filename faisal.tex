@@ -1,0 +1,273 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Faisal Amin } \\ \vspace{1pt}
+    Peshawar,Pakistan \\ \vspace{1pt}
+    \small \href{tel:123456789}{ \raisebox{-0.1\height}\faPhone\ \underline{+123456789} ~} \href{mailto:faysalamin001@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{faysalamin001@gmail.com}} ~ 
+    \href{https://linkedin.com/in/yourid}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{faisalamin001}}  ~
+    \href{https://github.com/yourid}{\raisebox{-0.2\height}\faGithub\ \underline{faisalamin001}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+ \vspace{3pt}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Edwardes College Peshawar}{04 2019 -- 07 2023}
+      {BS Comp Sci - \textbf{3.3} - \textbf{xx}}{Peshawar, Pakistan}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Govt College Peshawar}{07 2017 -- 05 2019}
+      {FSC - Comp Sci  - \textbf{78} - \textbf{xx\%}}{Peshawar, Pakistan}
+  \resumeSubHeadingListEnd
+\vspace{7pt}
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+    %\resumeSubHeadingListStart
+     \vspace{5pt}
+
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Data Structures \& Algorithms
+                \item Operating Systems
+                \item UI/UX Design
+                \item React development
+                \item JavaScript
+                \item OOPS Concept
+                \item Web Development
+                \item Android Development
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+\vspace{7pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-1pt}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\href{#}{\textbf{\large{\underline{Netflix Clone}}} \href{#}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{React and Axios}}}{12 2021}
+
+          \resumeItemListStart
+            \resumeItem{\normalsize{About project \textbf{Fetched data through axios library}}}
+            
+
+     \end{itemize}
+ \vspace{-1pt}
+ \resumeProjectHeading
+          {\href{#}{\textbf{\large{\underline{Weather App}}} \href{#}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Javascript and Fetch}}}{10 2021}
+          \resumeItemListStart
+           \vspace{2pt}
+
+            \resumeItem{\normalsize{About project \textbf{Lightening fast and dynamic weather app}}}
+            
+
+     \end{itemize}
+ \vspace{-1pt}
+ \resumeProjectHeading
+          {\href{#}{\textbf{\large{\underline{Portfolio Website}}} \href{#}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Wordpress and SCSS}}}{09 2021}
+          \resumeItemListStart
+            \resumeItem{\normalsize{About project \textbf{Completely responsive and elegant website}}}
+            
+
+     \end{itemize}
+%
+
+
+%-----------EXPERIENCE-----------
+\section{INTERNSHIP}
+  \resumeSubHeadingListStart
+ \vspace{3pt}
+
+    \resumeSubheading
+      {iTec Experts \href{#}{\raisebox{-0.1\height}\faExternalLink }}{01 2022 -- 06 2022} 
+      {\underline{React Developer}}{Peshawar, Pakistan}
+      \vspace{9pt}
+      \resumeSubheading
+      {Fiverr \href{#}{\raisebox{-0.1\height}\faExternalLink }}{04 2021 -- 09 2021} 
+      {\underline{WordPress Developer}}{Remote}
+        
+  \resumeSubHeadingListEnd
+\vspace{-1pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{Python, PHP , JavaScript, SQL }} \\
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{VS Code, Sublime, Terminals, Git , Atom , Figma , Adobe XD }} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ GitHub, ReactJS, Redux, NextJS, Git}} \\
+    }}
+ \end{itemize}
+ \vspace{-1pt}
+
+ %-----------CERTIFICATIONS---------------
+\section{CERTIFICATIONS}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{ReactJS \& Redux - Udemy}} \hspace{1.6cm}
+
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com} {UX Design - Coursera}}\\
+
+
+$\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{SQL}} \hspace{2.6cm}
+
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{\textbf{5 Stars} in \textbf{Git} \& \textbf{Github}
+\href{certificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{MongoDB Basics}} \hspace{0.5cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{JavaScript \& ES6 - Code Academy}} \\
+
+
+\end{document}
